@@ -11,11 +11,11 @@ class F {
   static String get title {
     switch (appFlavor) {
       case Flavor.dev:
-        return 'd-supercycle';
+        return 'dev Super re:Cycle';
       case Flavor.prod:
-        return 'supercycle';
+        return 'Super re:Cycle';
       default:
-        return 'title';
+        return 'Super re:Cycle';
     }
   }
 
