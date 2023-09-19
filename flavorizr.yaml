@@ -1,0 +1,19 @@
+flavors:
+  dev:
+    app:
+      name: "d-supercycle"
+    android:
+      applicationId: "com.supercycle.dev"
+      icon: "assets/ic_launcher.png"
+    ios:
+      bundleId: "com.supercycle.dev"
+      icon: "assets/ic_launcher.png"
+  prod:
+    app:
+      name: "supercycle"
+    android:
+      applicationId: "com.supercycle"
+      icon: "assets/ic_launcher.png"
+    ios:
+      bundleId: "com.supercycle"
+      icon: "assets/ic_launcher.png"
