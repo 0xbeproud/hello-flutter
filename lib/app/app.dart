@@ -14,6 +14,7 @@ class App extends StatelessWidget {
       title: F.title,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity
       ),
       home: _flavorBanner(
         child: const HomePage(),
