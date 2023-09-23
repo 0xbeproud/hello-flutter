@@ -1,29 +1,25 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
+import 'package:supercycle/app/app.dart';
 
 import 'config/flavors.dart';
 
-import 'main.dart' as runner;
-
 Future<void> main() async {
-  runZonedGuarded(() => null, (error, stack) {})
-  F.appFlavor = Flavor.dev;
-  await runner.main();
-
   runZonedGuarded(() async {
     F.appFlavor = Flavor.dev;
     if (!kDebugMode) {
       await SentryFlutter.init(
-            (options) {
+        (options) {
           options.dsn = "sentryDsn";
           options.attachStacktrace = true;
         },
-        appRunner: () => runner.main(),
+        appRunner: () => runApp(const App()),
       );
     } else {
-      await runner.main();
+      runApp(const App());
     }
   }, (exception, stackTrace) async {
     Sentry.captureException(exception, stackTrace: stackTrace);
