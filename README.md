@@ -2,6 +2,33 @@
 
 Super re:cycle
 
+## flavorizr
+
+https://pub.dev/packages/flutter_flavorizr#usage
+
+- 추후에 qa 환경 추가 후 issue 발생
+
+```shell
+❯ flutter run --flavor qa -t lib/main_qa.dart
+Launching lib/main_qa.dart on iPhone 15 in debug mode...
+Running Xcode build...                                                  
+Xcode build done.                                            2.0s
+Failed to build iOS app
+Error (Xcode): Unable to load contents of file list: '/Target Support Files/Pods-Runner/Pods-Runner-frameworks-Debug-qa-input-files.xcfilelist'
+
+
+Error (Xcode): Unable to load contents of file list: '/Target Support Files/Pods-Runner/Pods-Runner-frameworks-Debug-qa-output-files.xcfilelist'
+
+
+Could not build the application for the simulator.
+Error launching application on iPhone 15.
+
+
+Delete your Podfile.lock, delete the Pods and .symlinks folders, and run pub get again. This will solve the issue.
+
+
+```
+
 ## kakao login
 https://velog.io/@sumong/Flutter%EC%97%90%EC%84%9C-%EC%B9%B4%EC%B9%B4%EC%98%A4-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0
 https://www.incodom.kr/flutter_%EC%86%8C%EC%85%9C_%EB%A1%9C%EA%B7%B8%EC%9D%B8_%EA%B5%AC%ED%98%84_-_%EC%B9%B4%EC%B9%B4%EC%98%A4
