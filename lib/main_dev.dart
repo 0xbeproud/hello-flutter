@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:kakao_flutter_sdk/kakao_flutter_sdk.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 import 'package:supercycle/app/app.dart';
-import 'package:supercycle/config/config.dart';
+import 'package:supercycle/config/properties.dart';
 
 import 'config/flavors.dart';
 
@@ -17,6 +17,7 @@ Future<void> main() async {
     KakaoSdk.init(
       nativeAppKey: '<key>',
       javaScriptAppKey: '<key>',
+      customScheme: 'customScheme',
     );
 
     F.appFlavor = Flavor.dev;
@@ -30,7 +31,7 @@ Future<void> main() async {
         appRunner: () => runApp(const App()),
       );
     } else {
-      Config(F.appFlavor);
+      Properties(F.appFlavor);
       runApp(const App());
     }
   }, (exception, stackTrace) async {

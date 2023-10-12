@@ -3,7 +3,7 @@ import 'package:supercycle/app/tabs/tab_cart.dart';
 import 'package:supercycle/app/tabs/tab_home.dart';
 import 'package:supercycle/app/tabs/tab_profile.dart';
 import 'package:supercycle/app/tabs/tab_search.dart';
-import 'package:supercycle/config/config.dart';
+import 'package:supercycle/config/properties.dart';
 
 import '../../config/flavors.dart';
 
@@ -27,7 +27,7 @@ class _IndexScreenState extends State<IndexScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(Config.instance.title),),
+      appBar: AppBar(title: Text(Properties.instance.app.title),),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         iconSize: 44,

@@ -6,12 +6,12 @@ flavors:
       applicationId: "com.supercycle.dev"
       icon: "assets/ic_launcher.png"
       firebase:
-        config: ".firebase/dev/google-services.json"
+        config: "flavor/dev/google-services.json"
     ios:
       bundleId: "com.supercycle.dev"
       icon: "assets/ic_launcher.png"
       firebase:
-        config: ".firebase/dev/GoogleService-Info.plist"
+        config: "flavor/dev/GoogleService-Info.plist"
   qa:
     app:
       name: "q-supercycle"
@@ -19,12 +19,12 @@ flavors:
       applicationId: "com.supercycle.qa"
       icon: "assets/ic_launcher.png"
       firebase:
-        config: ".firebase/qa/google-services.json"
+        config: "flavor/qa/google-services.json"
     ios:
       bundleId: "com.supercycle.qa"
       icon: "assets/ic_launcher.png"
       firebase:
-        config: ".firebase/qa/GoogleService-Info.plist"
+        config: "flavor/qa/GoogleService-Info.plist"
   prod:
     app:
       name: "supercycle"
@@ -32,9 +32,9 @@ flavors:
       applicationId: "com.supercycle"
       icon: "assets/ic_launcher.png"
       firebase:
-        config: ".firebase/prod/google-services.json"
+        config: "flavor/prod/google-services.json"
     ios:
       bundleId: "com.supercycle"
       icon: "assets/ic_launcher.png"
       firebase:
-        config: ".firebase/prod/GoogleService-Info.plist"
+        config: "flavor/prod/GoogleService-Info.plist"
