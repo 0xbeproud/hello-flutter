@@ -5,24 +5,36 @@ flavors:
     android:
       applicationId: "com.supercycle.dev"
       icon: "assets/ic_launcher.png"
+      firebase:
+        config: ".firebase/dev/google-services.json"
     ios:
       bundleId: "com.supercycle.dev"
       icon: "assets/ic_launcher.png"
+      firebase:
+        config: ".firebase/dev/GoogleService-Info.plist"
   qa:
     app:
       name: "q-supercycle"
     android:
       applicationId: "com.supercycle.qa"
       icon: "assets/ic_launcher.png"
+      firebase:
+        config: ".firebase/qa/google-services.json"
     ios:
       bundleId: "com.supercycle.qa"
       icon: "assets/ic_launcher.png"
+      firebase:
+        config: ".firebase/qa/GoogleService-Info.plist"
   prod:
     app:
       name: "supercycle"
     android:
       applicationId: "com.supercycle"
       icon: "assets/ic_launcher.png"
+      firebase:
+        config: ".firebase/prod/google-services.json"
     ios:
       bundleId: "com.supercycle"
       icon: "assets/ic_launcher.png"
+      firebase:
+        config: ".firebase/prod/GoogleService-Info.plist"
