@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
+import 'flavors.dart';
 
-import 'app/pages/home_page.dart';
-import 'config/flavors.dart';
+import 'main.dart' as runner;
 
 Future<void> main() async {
   F.appFlavor = Flavor.prod;
-  runApp(const HomePage());
+  await runner.main();
 }

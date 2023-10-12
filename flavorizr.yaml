@@ -8,6 +8,15 @@ flavors:
     ios:
       bundleId: "com.supercycle.dev"
       icon: "assets/ic_launcher.png"
+  qa:
+    app:
+      name: "q-supercycle"
+    android:
+      applicationId: "com.supercycle.qa"
+      icon: "assets/ic_launcher.png"
+    ios:
+      bundleId: "com.supercycle.qa"
+      icon: "assets/ic_launcher.png"
   prod:
     app:
       name: "supercycle"

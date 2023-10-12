@@ -18,7 +18,7 @@ class F {
       case Flavor.prod:
         return 'supercycle';
       default:
-        return 'supercycle';
+        return 'title';
     }
   }
 
