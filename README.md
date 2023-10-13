@@ -8,7 +8,226 @@ https://pub.dev/packages/flutter_flavorizr#usage
 https://pierre-dev.hashnode.dev/get-the-best-out-of-flutter-flavors-with-flutterflavorizr
 
 ```shell
-flutter pub run flutter_flavorizr
+❯ flutter pub run flutter_flavorizr
+Deprecated. Use `dart run` instead.
+Resolving dependencies... 
+Got dependencies.
+Building package executable... (1.7s)
+Built flutter_flavorizr:flutter_flavorizr.
+Executing task assets:download
+
+Executing task assets:extract
+
+Executing task android:androidManifest
+
+Executing task android:buildGradle
+
+Executing task android:dummyAssets
+Running DummyAssetProcessor: Copying folder from .tmp/android/res to android/app/src/dev/res
+Running DummyAssetProcessor: Copying folder from .tmp/android/res to android/app/src/qa/res
+Running DummyAssetProcessor: Copying folder from .tmp/android/res to android/app/src/prod/res
+
+Executing task android:icons
+Running AndroidIconProcessor
+Running ImageResizerProcessor: Resizing image to Size{width: 48, height: 48} from assets/ic_launcher.png to android/app/src/dev/res/mipmap-mdpi/ic_launcher.png
+Running ImageResizerProcessor: Resizing image to Size{width: 72, height: 72} from assets/ic_launcher.png to android/app/src/dev/res/mipmap-hdpi/ic_launcher.png
+Running ImageResizerProcessor: Resizing image to Size{width: 96, height: 96} from assets/ic_launcher.png to android/app/src/dev/res/mipmap-xhdpi/ic_launcher.png
+Running ImageResizerProcessor: Resizing image to Size{width: 144, height: 144} from assets/ic_launcher.png to android/app/src/dev/res/mipmap-xxhdpi/ic_launcher.png
+Running ImageResizerProcessor: Resizing image to Size{width: 192, height: 192} from assets/ic_launcher.png to android/app/src/dev/res/mipmap-xxxhdpi/ic_launcher.png
+Running AndroidIconProcessor
+Running ImageResizerProcessor: Resizing image to Size{width: 48, height: 48} from assets/ic_launcher.png to android/app/src/qa/res/mipmap-mdpi/ic_launcher.png
+Running ImageResizerProcessor: Resizing image to Size{width: 72, height: 72} from assets/ic_launcher.png to android/app/src/qa/res/mipmap-hdpi/ic_launcher.png
+Running ImageResizerProcessor: Resizing image to Size{width: 96, height: 96} from assets/ic_launcher.png to android/app/src/qa/res/mipmap-xhdpi/ic_launcher.png
+Running ImageResizerProcessor: Resizing image to Size{width: 144, height: 144} from assets/ic_launcher.png to android/app/src/qa/res/mipmap-xxhdpi/ic_launcher.png
+Running ImageResizerProcessor: Resizing image to Size{width: 192, height: 192} from assets/ic_launcher.png to android/app/src/qa/res/mipmap-xxxhdpi/ic_launcher.png
+Running AndroidIconProcessor
+Running ImageResizerProcessor: Resizing image to Size{width: 48, height: 48} from assets/ic_launcher.png to android/app/src/prod/res/mipmap-mdpi/ic_launcher.png
+Running ImageResizerProcessor: Resizing image to Size{width: 72, height: 72} from assets/ic_launcher.png to android/app/src/prod/res/mipmap-hdpi/ic_launcher.png
+Running ImageResizerProcessor: Resizing image to Size{width: 96, height: 96} from assets/ic_launcher.png to android/app/src/prod/res/mipmap-xhdpi/ic_launcher.png
+Running ImageResizerProcessor: Resizing image to Size{width: 144, height: 144} from assets/ic_launcher.png to android/app/src/prod/res/mipmap-xxhdpi/ic_launcher.png
+Running ImageResizerProcessor: Resizing image to Size{width: 192, height: 192} from assets/ic_launcher.png to android/app/src/prod/res/mipmap-xxxhdpi/ic_launcher.png
+
+Executing task flutter:flavors
+
+Executing task flutter:app
+
+Executing task flutter:pages
+
+Executing task flutter:main
+
+Executing task flutter:targets
+Running FlutterTargetFileProcessor
+Running Copying file from .tmp/flutter/main_target.dart to lib/main_dev.dart
+Running FileProcessor: creating file lib/main_dev.dart with nested ReplaceStringProcessor: replacing [[FLAVOR_NAME]] with dev
+Running FlutterTargetFileProcessor
+Running Copying file from .tmp/flutter/main_target.dart to lib/main_qa.dart
+Running FileProcessor: creating file lib/main_qa.dart with nested ReplaceStringProcessor: replacing [[FLAVOR_NAME]] with qa
+Running FlutterTargetFileProcessor
+Running Copying file from .tmp/flutter/main_target.dart to lib/main_prod.dart
+Running FileProcessor: creating file lib/main_prod.dart with nested ReplaceStringProcessor: replacing [[FLAVOR_NAME]] with prod
+
+Executing task ios:xcconfig
+Running IOSXCConfigFileProcessor
+Running IOSXCConfigModeFileProcessor
+Running FileProcessor: writing file ios/Flutter/devDebug.xcconfig with nested IOSXCConfigProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Flutter/devDebug.xcconfig, Flutter
+Running IOSXCConfigModeFileProcessor
+Running FileProcessor: writing file ios/Flutter/devProfile.xcconfig with nested IOSXCConfigProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Flutter/devProfile.xcconfig, Flutter
+Running IOSXCConfigModeFileProcessor
+Running FileProcessor: writing file ios/Flutter/devRelease.xcconfig with nested IOSXCConfigProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Flutter/devRelease.xcconfig, Flutter
+Running IOSXCConfigFileProcessor
+Running IOSXCConfigModeFileProcessor
+Running FileProcessor: writing file ios/Flutter/qaDebug.xcconfig with nested IOSXCConfigProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Flutter/qaDebug.xcconfig, Flutter
+Running IOSXCConfigModeFileProcessor
+Running FileProcessor: writing file ios/Flutter/qaProfile.xcconfig with nested IOSXCConfigProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Flutter/qaProfile.xcconfig, Flutter
+Running IOSXCConfigModeFileProcessor
+Running FileProcessor: writing file ios/Flutter/qaRelease.xcconfig with nested IOSXCConfigProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Flutter/qaRelease.xcconfig, Flutter
+Running IOSXCConfigFileProcessor
+Running IOSXCConfigModeFileProcessor
+Running FileProcessor: writing file ios/Flutter/prodDebug.xcconfig with nested IOSXCConfigProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Flutter/prodDebug.xcconfig, Flutter
+Running IOSXCConfigModeFileProcessor
+Running FileProcessor: writing file ios/Flutter/prodProfile.xcconfig with nested IOSXCConfigProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Flutter/prodProfile.xcconfig, Flutter
+Running IOSXCConfigModeFileProcessor
+Running FileProcessor: writing file ios/Flutter/prodRelease.xcconfig with nested IOSXCConfigProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Flutter/prodRelease.xcconfig, Flutter
+
+Executing task ios:buildTargets
+Running DarwinBuildConfigurationsProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_build_configuration.rb, ios/Runner.xcodeproj, Flutter/devDebug.xcconfig, dev, com.supercycle.dev, Debug, eyJBU1NFVENBVEFMT0dfQ09NUElMRVJfQVBQSUNPTl9OQU1FIjoiJChBU1NFVF9QUkVGSVgpQXBwSWNvbiIsIkxEX1JVTlBBVEhfU0VBUkNIX1BBVEhTIjoiJChpbmhlcml0ZWQpIEBleGVjdXRhYmxlX3BhdGgvRnJhbWV3b3JrcyIsIlNXSUZUX09CSkNfQlJJREdJTkdfSEVBREVSIjoiUnVubmVyL1J1bm5lci1CcmlkZ2luZy1IZWFkZXIuaCIsIlNXSUZUX1ZFUlNJT04iOiI1LjAiLCJGUkFNRVdPUktfU0VBUkNIX1BBVEhTIjpbIiQoaW5oZXJpdGVkKSIsIiQoUFJPSkVDVF9ESVIpL0ZsdXR0ZXIiXSwiTElCUkFSWV9TRUFSQ0hfUEFUSFMiOlsiJChpbmhlcml0ZWQpIiwiJChQUk9KRUNUX0RJUikvRmx1dHRlciJdLCJJTkZPUExJU1RfRklMRSI6IlJ1bm5lci9JbmZvLnBsaXN0IiwiUFJPRFVDVF9CVU5ETEVfSURFTlRJRklFUiI6ImNvbS5zdXBlcmN5Y2xlLmRldiJ9
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_build_configuration.rb, ios/Runner.xcodeproj, Flutter/devProfile.xcconfig, dev, com.supercycle.dev, Profile, eyJBU1NFVENBVEFMT0dfQ09NUElMRVJfQVBQSUNPTl9OQU1FIjoiJChBU1NFVF9QUkVGSVgpQXBwSWNvbiIsIkxEX1JVTlBBVEhfU0VBUkNIX1BBVEhTIjoiJChpbmhlcml0ZWQpIEBleGVjdXRhYmxlX3BhdGgvRnJhbWV3b3JrcyIsIlNXSUZUX09CSkNfQlJJREdJTkdfSEVBREVSIjoiUnVubmVyL1J1bm5lci1CcmlkZ2luZy1IZWFkZXIuaCIsIlNXSUZUX1ZFUlNJT04iOiI1LjAiLCJGUkFNRVdPUktfU0VBUkNIX1BBVEhTIjpbIiQoaW5oZXJpdGVkKSIsIiQoUFJPSkVDVF9ESVIpL0ZsdXR0ZXIiXSwiTElCUkFSWV9TRUFSQ0hfUEFUSFMiOlsiJChpbmhlcml0ZWQpIiwiJChQUk9KRUNUX0RJUikvRmx1dHRlciJdLCJJTkZPUExJU1RfRklMRSI6IlJ1bm5lci9JbmZvLnBsaXN0IiwiUFJPRFVDVF9CVU5ETEVfSURFTlRJRklFUiI6ImNvbS5zdXBlcmN5Y2xlLmRldiJ9
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_build_configuration.rb, ios/Runner.xcodeproj, Flutter/devRelease.xcconfig, dev, com.supercycle.dev, Release, eyJBU1NFVENBVEFMT0dfQ09NUElMRVJfQVBQSUNPTl9OQU1FIjoiJChBU1NFVF9QUkVGSVgpQXBwSWNvbiIsIkxEX1JVTlBBVEhfU0VBUkNIX1BBVEhTIjoiJChpbmhlcml0ZWQpIEBleGVjdXRhYmxlX3BhdGgvRnJhbWV3b3JrcyIsIlNXSUZUX09CSkNfQlJJREdJTkdfSEVBREVSIjoiUnVubmVyL1J1bm5lci1CcmlkZ2luZy1IZWFkZXIuaCIsIlNXSUZUX1ZFUlNJT04iOiI1LjAiLCJGUkFNRVdPUktfU0VBUkNIX1BBVEhTIjpbIiQoaW5oZXJpdGVkKSIsIiQoUFJPSkVDVF9ESVIpL0ZsdXR0ZXIiXSwiTElCUkFSWV9TRUFSQ0hfUEFUSFMiOlsiJChpbmhlcml0ZWQpIiwiJChQUk9KRUNUX0RJUikvRmx1dHRlciJdLCJJTkZPUExJU1RfRklMRSI6IlJ1bm5lci9JbmZvLnBsaXN0IiwiUFJPRFVDVF9CVU5ETEVfSURFTlRJRklFUiI6ImNvbS5zdXBlcmN5Y2xlLmRldiJ9
+Running DarwinBuildConfigurationsProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_build_configuration.rb, ios/Runner.xcodeproj, Flutter/qaDebug.xcconfig, qa, com.supercycle.qa, Debug, eyJBU1NFVENBVEFMT0dfQ09NUElMRVJfQVBQSUNPTl9OQU1FIjoiJChBU1NFVF9QUkVGSVgpQXBwSWNvbiIsIkxEX1JVTlBBVEhfU0VBUkNIX1BBVEhTIjoiJChpbmhlcml0ZWQpIEBleGVjdXRhYmxlX3BhdGgvRnJhbWV3b3JrcyIsIlNXSUZUX09CSkNfQlJJREdJTkdfSEVBREVSIjoiUnVubmVyL1J1bm5lci1CcmlkZ2luZy1IZWFkZXIuaCIsIlNXSUZUX1ZFUlNJT04iOiI1LjAiLCJGUkFNRVdPUktfU0VBUkNIX1BBVEhTIjpbIiQoaW5oZXJpdGVkKSIsIiQoUFJPSkVDVF9ESVIpL0ZsdXR0ZXIiXSwiTElCUkFSWV9TRUFSQ0hfUEFUSFMiOlsiJChpbmhlcml0ZWQpIiwiJChQUk9KRUNUX0RJUikvRmx1dHRlciJdLCJJTkZPUExJU1RfRklMRSI6IlJ1bm5lci9JbmZvLnBsaXN0IiwiUFJPRFVDVF9CVU5ETEVfSURFTlRJRklFUiI6ImNvbS5zdXBlcmN5Y2xlLnFhIn0=
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_build_configuration.rb, ios/Runner.xcodeproj, Flutter/qaProfile.xcconfig, qa, com.supercycle.qa, Profile, eyJBU1NFVENBVEFMT0dfQ09NUElMRVJfQVBQSUNPTl9OQU1FIjoiJChBU1NFVF9QUkVGSVgpQXBwSWNvbiIsIkxEX1JVTlBBVEhfU0VBUkNIX1BBVEhTIjoiJChpbmhlcml0ZWQpIEBleGVjdXRhYmxlX3BhdGgvRnJhbWV3b3JrcyIsIlNXSUZUX09CSkNfQlJJREdJTkdfSEVBREVSIjoiUnVubmVyL1J1bm5lci1CcmlkZ2luZy1IZWFkZXIuaCIsIlNXSUZUX1ZFUlNJT04iOiI1LjAiLCJGUkFNRVdPUktfU0VBUkNIX1BBVEhTIjpbIiQoaW5oZXJpdGVkKSIsIiQoUFJPSkVDVF9ESVIpL0ZsdXR0ZXIiXSwiTElCUkFSWV9TRUFSQ0hfUEFUSFMiOlsiJChpbmhlcml0ZWQpIiwiJChQUk9KRUNUX0RJUikvRmx1dHRlciJdLCJJTkZPUExJU1RfRklMRSI6IlJ1bm5lci9JbmZvLnBsaXN0IiwiUFJPRFVDVF9CVU5ETEVfSURFTlRJRklFUiI6ImNvbS5zdXBlcmN5Y2xlLnFhIn0=
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_build_configuration.rb, ios/Runner.xcodeproj, Flutter/qaRelease.xcconfig, qa, com.supercycle.qa, Release, eyJBU1NFVENBVEFMT0dfQ09NUElMRVJfQVBQSUNPTl9OQU1FIjoiJChBU1NFVF9QUkVGSVgpQXBwSWNvbiIsIkxEX1JVTlBBVEhfU0VBUkNIX1BBVEhTIjoiJChpbmhlcml0ZWQpIEBleGVjdXRhYmxlX3BhdGgvRnJhbWV3b3JrcyIsIlNXSUZUX09CSkNfQlJJREdJTkdfSEVBREVSIjoiUnVubmVyL1J1bm5lci1CcmlkZ2luZy1IZWFkZXIuaCIsIlNXSUZUX1ZFUlNJT04iOiI1LjAiLCJGUkFNRVdPUktfU0VBUkNIX1BBVEhTIjpbIiQoaW5oZXJpdGVkKSIsIiQoUFJPSkVDVF9ESVIpL0ZsdXR0ZXIiXSwiTElCUkFSWV9TRUFSQ0hfUEFUSFMiOlsiJChpbmhlcml0ZWQpIiwiJChQUk9KRUNUX0RJUikvRmx1dHRlciJdLCJJTkZPUExJU1RfRklMRSI6IlJ1bm5lci9JbmZvLnBsaXN0IiwiUFJPRFVDVF9CVU5ETEVfSURFTlRJRklFUiI6ImNvbS5zdXBlcmN5Y2xlLnFhIn0=
+Running DarwinBuildConfigurationsProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_build_configuration.rb, ios/Runner.xcodeproj, Flutter/prodDebug.xcconfig, prod, com.supercycle, Debug, eyJBU1NFVENBVEFMT0dfQ09NUElMRVJfQVBQSUNPTl9OQU1FIjoiJChBU1NFVF9QUkVGSVgpQXBwSWNvbiIsIkxEX1JVTlBBVEhfU0VBUkNIX1BBVEhTIjoiJChpbmhlcml0ZWQpIEBleGVjdXRhYmxlX3BhdGgvRnJhbWV3b3JrcyIsIlNXSUZUX09CSkNfQlJJREdJTkdfSEVBREVSIjoiUnVubmVyL1J1bm5lci1CcmlkZ2luZy1IZWFkZXIuaCIsIlNXSUZUX1ZFUlNJT04iOiI1LjAiLCJGUkFNRVdPUktfU0VBUkNIX1BBVEhTIjpbIiQoaW5oZXJpdGVkKSIsIiQoUFJPSkVDVF9ESVIpL0ZsdXR0ZXIiXSwiTElCUkFSWV9TRUFSQ0hfUEFUSFMiOlsiJChpbmhlcml0ZWQpIiwiJChQUk9KRUNUX0RJUikvRmx1dHRlciJdLCJJTkZPUExJU1RfRklMRSI6IlJ1bm5lci9JbmZvLnBsaXN0IiwiUFJPRFVDVF9CVU5ETEVfSURFTlRJRklFUiI6ImNvbS5zdXBlcmN5Y2xlIn0=
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_build_configuration.rb, ios/Runner.xcodeproj, Flutter/prodProfile.xcconfig, prod, com.supercycle, Profile, eyJBU1NFVENBVEFMT0dfQ09NUElMRVJfQVBQSUNPTl9OQU1FIjoiJChBU1NFVF9QUkVGSVgpQXBwSWNvbiIsIkxEX1JVTlBBVEhfU0VBUkNIX1BBVEhTIjoiJChpbmhlcml0ZWQpIEBleGVjdXRhYmxlX3BhdGgvRnJhbWV3b3JrcyIsIlNXSUZUX09CSkNfQlJJREdJTkdfSEVBREVSIjoiUnVubmVyL1J1bm5lci1CcmlkZ2luZy1IZWFkZXIuaCIsIlNXSUZUX1ZFUlNJT04iOiI1LjAiLCJGUkFNRVdPUktfU0VBUkNIX1BBVEhTIjpbIiQoaW5oZXJpdGVkKSIsIiQoUFJPSkVDVF9ESVIpL0ZsdXR0ZXIiXSwiTElCUkFSWV9TRUFSQ0hfUEFUSFMiOlsiJChpbmhlcml0ZWQpIiwiJChQUk9KRUNUX0RJUikvRmx1dHRlciJdLCJJTkZPUExJU1RfRklMRSI6IlJ1bm5lci9JbmZvLnBsaXN0IiwiUFJPRFVDVF9CVU5ETEVfSURFTlRJRklFUiI6ImNvbS5zdXBlcmN5Y2xlIn0=
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_build_configuration.rb, ios/Runner.xcodeproj, Flutter/prodRelease.xcconfig, prod, com.supercycle, Release, eyJBU1NFVENBVEFMT0dfQ09NUElMRVJfQVBQSUNPTl9OQU1FIjoiJChBU1NFVF9QUkVGSVgpQXBwSWNvbiIsIkxEX1JVTlBBVEhfU0VBUkNIX1BBVEhTIjoiJChpbmhlcml0ZWQpIEBleGVjdXRhYmxlX3BhdGgvRnJhbWV3b3JrcyIsIlNXSUZUX09CSkNfQlJJREdJTkdfSEVBREVSIjoiUnVubmVyL1J1bm5lci1CcmlkZ2luZy1IZWFkZXIuaCIsIlNXSUZUX1ZFUlNJT04iOiI1LjAiLCJGUkFNRVdPUktfU0VBUkNIX1BBVEhTIjpbIiQoaW5oZXJpdGVkKSIsIiQoUFJPSkVDVF9ESVIpL0ZsdXR0ZXIiXSwiTElCUkFSWV9TRUFSQ0hfUEFUSFMiOlsiJChpbmhlcml0ZWQpIiwiJChQUk9KRUNUX0RJUikvRmx1dHRlciJdLCJJTkZPUExJU1RfRklMRSI6IlJ1bm5lci9JbmZvLnBsaXN0IiwiUFJPRFVDVF9CVU5ETEVfSURFTlRJRklFUiI6ImNvbS5zdXBlcmN5Y2xlIn0=
+
+Executing task ios:schema
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/create_scheme.rb, ios/Runner.xcodeproj, dev
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/create_scheme.rb, ios/Runner.xcodeproj, qa
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/create_scheme.rb, ios/Runner.xcodeproj, prod
+
+Executing task ios:dummyAssets
+Running IOSDummyAssetsProcessor
+Running DummyAssetProcessor: Copying folder from .tmp/ios/Assets.xcassets/AppIcon.appiconset to ios/Runner/Assets.xcassets/devAppIcon.appiconset
+Running DummyAssetProcessor: Copying folder from .tmp/ios/Assets.xcassets/LaunchImage.imageset to ios/Runner/Assets.xcassets/devLaunchImage.imageset
+Running IOSDummyAssetsProcessor
+Running DummyAssetProcessor: Copying folder from .tmp/ios/Assets.xcassets/AppIcon.appiconset to ios/Runner/Assets.xcassets/qaAppIcon.appiconset
+Running DummyAssetProcessor: Copying folder from .tmp/ios/Assets.xcassets/LaunchImage.imageset to ios/Runner/Assets.xcassets/qaLaunchImage.imageset
+Running IOSDummyAssetsProcessor
+Running DummyAssetProcessor: Copying folder from .tmp/ios/Assets.xcassets/AppIcon.appiconset to ios/Runner/Assets.xcassets/prodAppIcon.appiconset
+Running DummyAssetProcessor: Copying folder from .tmp/ios/Assets.xcassets/LaunchImage.imageset to ios/Runner/Assets.xcassets/prodLaunchImage.imageset
+
+Executing task ios:icons
+Running IOSIconProcessor
+Running ImageResizerProcessor: Resizing image to Size{width: 20, height: 20} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-20x20@1x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 40, height: 40} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-20x20@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 60, height: 60} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-20x20@3x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 29, height: 29} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-29x29@1x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 58, height: 58} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-29x29@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 87, height: 87} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-29x29@3x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 40, height: 40} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-40x40@1x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 80, height: 80} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-40x40@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 120, height: 120} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-40x40@3x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 120, height: 120} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-60x60@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 180, height: 180} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-60x60@3x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 76, height: 76} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-76x76@1x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 152, height: 152} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-76x76@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 167, height: 167} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-83.5x83.5@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 1024, height: 1024} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/devAppIcon.appiconset/Icon-App-1024x1024@1x.png
+Running IOSIconProcessor
+Running ImageResizerProcessor: Resizing image to Size{width: 20, height: 20} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-20x20@1x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 40, height: 40} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-20x20@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 60, height: 60} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-20x20@3x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 29, height: 29} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-29x29@1x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 58, height: 58} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-29x29@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 87, height: 87} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-29x29@3x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 40, height: 40} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-40x40@1x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 80, height: 80} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-40x40@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 120, height: 120} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-40x40@3x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 120, height: 120} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-60x60@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 180, height: 180} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-60x60@3x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 76, height: 76} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-76x76@1x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 152, height: 152} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-76x76@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 167, height: 167} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-83.5x83.5@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 1024, height: 1024} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/qaAppIcon.appiconset/Icon-App-1024x1024@1x.png
+Running IOSIconProcessor
+Running ImageResizerProcessor: Resizing image to Size{width: 20, height: 20} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-20x20@1x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 40, height: 40} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-20x20@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 60, height: 60} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-20x20@3x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 29, height: 29} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-29x29@1x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 58, height: 58} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-29x29@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 87, height: 87} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-29x29@3x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 40, height: 40} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-40x40@1x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 80, height: 80} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-40x40@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 120, height: 120} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-40x40@3x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 120, height: 120} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-60x60@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 180, height: 180} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-60x60@3x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 76, height: 76} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-76x76@1x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 152, height: 152} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-76x76@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 167, height: 167} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-83.5x83.5@2x.png
+Running ImageResizerProcessor: Resizing image to Size{width: 1024, height: 1024} from assets/ic_launcher.png to ios/Runner/Assets.xcassets/prodAppIcon.appiconset/Icon-App-1024x1024@1x.png
+
+Executing task ios:plist
+
+Executing task ios:launchScreen
+Running IOSTargetLaunchScreenFileProcessor
+Running Copying file from .tmp/ios/LaunchScreen.storyboard to ios/Runner/devLaunchScreen.storyboard
+Running FileProcessor: creating file ios/Runner/devLaunchScreen.storyboard with nested ReplaceStringProcessor: replacing [[FLAVOR_NAME]] with dev
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Runner/devLaunchScreen.storyboard
+Running IOSTargetLaunchScreenFileProcessor
+Running Copying file from .tmp/ios/LaunchScreen.storyboard to ios/Runner/qaLaunchScreen.storyboard
+Running FileProcessor: creating file ios/Runner/qaLaunchScreen.storyboard with nested ReplaceStringProcessor: replacing [[FLAVOR_NAME]] with qa
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Runner/qaLaunchScreen.storyboard
+Running IOSTargetLaunchScreenFileProcessor
+Running Copying file from .tmp/ios/LaunchScreen.storyboard to ios/Runner/prodLaunchScreen.storyboard
+Running FileProcessor: creating file ios/Runner/prodLaunchScreen.storyboard with nested ReplaceStringProcessor: replacing [[FLAVOR_NAME]] with prod
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Runner/prodLaunchScreen.storyboard
+
+Executing task google:firebase
+Running AndroidFirebaseProcessor
+Running AndroidTargetFirebaseProcessor
+Running NewFolderProcessor: Creating directory android/app/src/dev
+Running Copying file from flavor/dev/google-services.json to android/app/src/dev/google-services.json
+Running AndroidTargetFirebaseProcessor
+Running NewFolderProcessor: Creating directory android/app/src/qa
+Running Copying file from flavor/qa/google-services.json to android/app/src/qa/google-services.json
+Running AndroidTargetFirebaseProcessor
+Running NewFolderProcessor: Creating directory android/app/src/prod
+Running Copying file from flavor/prod/google-services.json to android/app/src/prod/google-services.json
+Running IOSTargetsFirebaseProcessor
+Running DarwinFirebaseProcessor
+Running NewFolderProcessor: Creating directory ios/Runner/dev
+Running Copying file from flavor/dev/GoogleService-Info.plist to ios/Runner/dev/GoogleService-Info.plist
+Running DarwinFirebaseProcessor
+Running NewFolderProcessor: Creating directory ios/Runner/qa
+Running Copying file from flavor/qa/GoogleService-Info.plist to ios/Runner/qa/GoogleService-Info.plist
+Running DarwinFirebaseProcessor
+Running NewFolderProcessor: Creating directory ios/Runner/prod
+Running Copying file from flavor/prod/GoogleService-Info.plist to ios/Runner/prod/GoogleService-Info.plist
+Running FileProcessor: writing file ios/Runner/GoogleService-Info.plist with nested EmptyFileProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Runner/GoogleService-Info.plist
+Running FileProcessor: writing file ios/firebaseScript.sh with nested DarwinFirebaseScriptProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_firebase_build_phase.rb, ios/Runner.xcodeproj, ios/firebaseScript.sh
+
+Executing task huawei:agconnect
+
+Executing task assets:clean
+Running Deleting file from assets.tmp.zip
+Running Deleting file from .tmp
+
+Executing task ide:config
+
 ```
 
 firebase 설정
@@ -45,12 +264,6 @@ ruby: No such file or directory -- .tmp/scripts/darwin/add_file.rb (LoadError)
 Running FileProcessor: writing file ios/firebaseScript.sh with nested DarwinFirebaseScriptProcessor
 Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_firebase_build_phase.rb, ios/Runner.xcodeproj, ios/firebaseScript.sh
 ruby: No such file or directory -- .tmp/scripts/darwin/add_firebase_build_phase.rb (LoadError)
-
-
-
-~/labs/supercycle main*                                                                                                                                                                                                                                                                                                                                                                                       12:05:35
-❯ 
-
 ```
 
 ### 추후에 qa 환경 추가 후 issue 발생
