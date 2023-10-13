@@ -5,6 +5,53 @@ Super re:cycle
 ## flavorizr
 
 https://pub.dev/packages/flutter_flavorizr#usage
+https://pierre-dev.hashnode.dev/get-the-best-out-of-flutter-flavors-with-flutterflavorizr
+
+```shell
+flutter pub run flutter_flavorizr
+```
+
+firebase 설정
+```shell
+❯ flutter pub run flutter_flavorizr -p google:firebase
+Deprecated. Use `dart run` instead.
+Building package executable... 
+Built flutter_flavorizr:flutter_flavorizr.
+Executing task google:firebase
+Running AndroidFirebaseProcessor
+Running AndroidTargetFirebaseProcessor
+Running NewFolderProcessor: Creating directory android/app/src/dev
+Running Copying file from flavor/dev/google-services.json to android/app/src/dev/google-services.json
+Running AndroidTargetFirebaseProcessor
+Running NewFolderProcessor: Creating directory android/app/src/qa
+Running Copying file from flavor/qa/google-services.json to android/app/src/qa/google-services.json
+Running AndroidTargetFirebaseProcessor
+Running NewFolderProcessor: Creating directory android/app/src/prod
+Running Copying file from flavor/prod/google-services.json to android/app/src/prod/google-services.json
+Running IOSTargetsFirebaseProcessor
+Running DarwinFirebaseProcessor
+Running NewFolderProcessor: Creating directory ios/Runner/dev
+Running Copying file from flavor/dev/GoogleService-Info.plist to ios/Runner/dev/GoogleService-Info.plist
+Running DarwinFirebaseProcessor
+Running NewFolderProcessor: Creating directory ios/Runner/qa
+Running Copying file from flavor/qa/GoogleService-Info.plist to ios/Runner/qa/GoogleService-Info.plist
+Running DarwinFirebaseProcessor
+Running NewFolderProcessor: Creating directory ios/Runner/prod
+Running Copying file from flavor/prod/GoogleService-Info.plist to ios/Runner/prod/GoogleService-Info.plist
+Running FileProcessor: writing file ios/Runner/GoogleService-Info.plist with nested EmptyFileProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_file.rb, ios/Runner.xcodeproj, Runner/GoogleService-Info.plist
+ruby: No such file or directory -- .tmp/scripts/darwin/add_file.rb (LoadError)
+
+Running FileProcessor: writing file ios/firebaseScript.sh with nested DarwinFirebaseScriptProcessor
+Running ShellProcessor: Running script 'ruby' with arguments .tmp/scripts/darwin/add_firebase_build_phase.rb, ios/Runner.xcodeproj, ios/firebaseScript.sh
+ruby: No such file or directory -- .tmp/scripts/darwin/add_firebase_build_phase.rb (LoadError)
+
+
+
+~/labs/supercycle main*                                                                                                                                                                                                                                                                                                                                                                                       12:05:35
+❯ 
+
+```
 
 ### 추후에 qa 환경 추가 후 issue 발생
 
