@@ -637,6 +637,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 094F00CFB9BEBBDDD998994B /* Pods-Runner.debug-sandbox.xcconfig */;
 			buildSettings = {
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Debug-sandbox";
@@ -645,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A77BDDE96F23A4CE516DBF2 /* Pods-Runner.profile-sandbox.xcconfig */;
 			buildSettings = {
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Profile-sandbox";
@@ -653,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EF0887DC4440516E0CCA8730 /* Pods-Runner.release-sandbox.xcconfig */;
 			buildSettings = {
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Release-sandbox";
@@ -685,6 +688,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7A406317EE5EADA590D94906 /* Pods-Runner.debug-third.xcconfig */;
 			buildSettings = {
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Debug-third";
@@ -693,6 +697,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 568FC511F61D0EFA25DE2323 /* Pods-Runner.profile-third.xcconfig */;
 			buildSettings = {
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Profile-third";
@@ -701,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3D97AF7C6A10FA031023D68 /* Pods-Runner.release-third.xcconfig */;
 			buildSettings = {
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Release-third";
@@ -733,6 +739,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 38D1F366667815AEC5055D0E /* Pods-Runner.debug-dev.xcconfig */;
 			buildSettings = {
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Debug-dev";
@@ -741,6 +748,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC31F2D8C781002878B56EBE /* Pods-Runner.profile-dev.xcconfig */;
 			buildSettings = {
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Profile-dev";
@@ -749,6 +757,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BBBE75D7C615BD9F7372B3D /* Pods-Runner.release-dev.xcconfig */;
 			buildSettings = {
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Release-dev";
@@ -757,6 +766,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8E727C409AA04B088888C5B4 /* Pods-Runner.debug-prod.xcconfig */;
 			buildSettings = {
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Debug-prod";
@@ -765,6 +775,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A2F2F3AE425FD0F367627AE /* Pods-Runner.profile-prod.xcconfig */;
 			buildSettings = {
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Profile-prod";
@@ -773,6 +784,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 87D343B852D4363BF939F2FB /* Pods-Runner.release-prod.xcconfig */;
 			buildSettings = {
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Release-prod";
@@ -830,6 +842,7 @@
 			baseConfigurationReference = 7F441EEFB83E0ED2778FA8AB /* Pods-Runner.debug-qa.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = "";
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Debug-qa";
@@ -839,6 +852,7 @@
 			baseConfigurationReference = C837DCF25B0EFFAD6720FB1D /* Pods-Runner.profile-qa.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = "";
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Profile-qa";
@@ -848,6 +862,7 @@
 			baseConfigurationReference = 995EB4CC5A6EF1DF54BDF26A /* Pods-Runner.release-qa.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = "";
+				NEW_SETTING = "";
 				PRODUCT_NAME = Runner;
 			};
 			name = "Release-qa";
@@ -1014,6 +1029,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.supercycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -1556,6 +1572,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.supercycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -1578,6 +1595,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.supercycle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";

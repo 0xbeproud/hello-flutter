@@ -3,6 +3,7 @@ enum Flavor {
   qa,
   sandbox,
   prod,
+  third,
 }
 
 class F {
@@ -20,6 +21,8 @@ class F {
         return 'q-supercycle';
       case Flavor.prod:
         return 'supercycle';
+      case Flavor.third:
+        return 't-supercycle';
       default:
         return 'supercycle';
     }
