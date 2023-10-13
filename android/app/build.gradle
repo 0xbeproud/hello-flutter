@@ -33,6 +33,11 @@ android {
             applicationId "com.supercycle.dev"
             resValue "string", "app_name", "d-supercycle"
         }
+        sandbox {
+            dimension "flavor-type"
+            applicationId "com.supercycle.sandbox"
+            resValue "string", "app_name", "s-supercycle"
+        }
         qa {
             dimension "flavor-type"
             applicationId "com.supercycle.qa"

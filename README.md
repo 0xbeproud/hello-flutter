@@ -268,6 +268,8 @@ ruby: No such file or directory -- .tmp/scripts/darwin/add_firebase_build_phase.
 
 ### 추후에 qa 환경 추가 후 issue 발생
 
+https://stackoverflow.com/questions/55505991/xcode-10-2-update-issue-build-system-error-1-unable-to-load-contents-of-file-l/56966495#56966495
+
 1. issue
 ```shell
 ❯ flutter run --flavor qa -t lib/main_qa.dart
@@ -292,9 +294,11 @@ ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh 에 qa 관�
 
 Podfile.lock 삭제
 ios/Pods 폴더 삭제
-.symlinks 폴더 삭제 
+.symlinks 폴더 삭제
+flutter clean
+flutter pub get 
 
-ios 폴더에서 pod install
+cd ios && pod deintegrate && pod install
 
 
 ## kakao login

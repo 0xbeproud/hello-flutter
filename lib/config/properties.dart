@@ -10,6 +10,10 @@ class Properties {
       : app = AppProperties("d-Super Cycle", "https://api.supercycle.dev", "https://cdn.supercycle.dev"),
         kakao = KakaoProperties("nativeAppKey", "javaScriptAppKey", "customScheme");
 
+  Properties._sandbox()
+      : app = AppProperties("s-Super Cycle", "https://api.supercycle.sandbox", "https://cdn.supercycle.sandbox"),
+        kakao = KakaoProperties("nativeAppKey", "javaScriptAppKey", "customScheme");
+
   Properties._qa()
       : app = AppProperties("q-Super Cycle", "https://api.supercycle.qa", "https://cdn.supercycle.qa"),
         kakao = KakaoProperties("nativeAppKey", "javaScriptAppKey", "customScheme");
@@ -22,6 +26,9 @@ class Properties {
     switch (flavor) {
       case Flavor.dev:
         _instance = Properties._dev();
+        break;
+      case Flavor.sandbox:
+        _instance = Properties._sandbox();
         break;
       case Flavor.qa:
         _instance = Properties._qa();

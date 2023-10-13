@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_sandbox.dart
+ASSET_PREFIX=sandbox
+BUNDLE_NAME=s-supercycle
+BUNDLE_DISPLAY_NAME=s-supercycle

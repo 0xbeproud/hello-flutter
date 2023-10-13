@@ -16,6 +16,23 @@ flavors:
         # Development Team is visible in the apple developer portal
 #          DEVELOPMENT_TEAM: YOURDEVTEAMID
 #          PROVISIONING_PROFILE_SPECIFIER: "Dev-ProvisioningProfile"
+  sandbox:
+    app:
+      name: "s-supercycle"
+    android:
+      applicationId: "com.supercycle.sandbox"
+      icon: "assets/ic_launcher.png"
+      firebase:
+        config: "flavor/sandbox/google-services.json"
+    ios:
+      bundleId: "com.supercycle.sandbox"
+      icon: "assets/ic_launcher.png"
+      firebase:
+        config: "flavor/sandbox/GoogleService-Info.plist"
+        #        buildSettings:
+        # Development Team is visible in the apple developer portal
+  #          DEVELOPMENT_TEAM: YOURDEVTEAMID
+  #          PROVISIONING_PROFILE_SPECIFIER: "Dev-ProvisioningProfile"
   qa:
     app:
       name: "q-supercycle"
