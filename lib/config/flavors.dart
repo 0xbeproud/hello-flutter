@@ -1,6 +1,7 @@
 enum Flavor {
   dev,
   qa,
+  sandbox,
   prod,
 }
 
@@ -13,6 +14,8 @@ class F {
     switch (appFlavor) {
       case Flavor.dev:
         return 'd-supercycle';
+      case Flavor.sandbox:
+        return 's-supercycle';
       case Flavor.qa:
         return 'q-supercycle';
       case Flavor.prod:
