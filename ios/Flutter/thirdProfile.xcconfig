@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_third.dart
+ASSET_PREFIX=third
+BUNDLE_NAME=t-supercycle
+BUNDLE_DISPLAY_NAME=t-supercycle
