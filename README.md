@@ -8,6 +8,12 @@ https://pub.dev/packages/flutter_flavorizr#usage
 https://pierre-dev.hashnode.dev/get-the-best-out-of-flutter-flavors-with-flutterflavorizr
 
 ```shell
+Podfile.lock 삭제
+ios/Pods 폴더 삭제
+.symlinks 폴더 삭제
+
+❯ flutter clean
+❯ flutter pub get
 ❯ flutter pub run flutter_flavorizr
 Deprecated. Use `dart run` instead.
 Resolving dependencies... 

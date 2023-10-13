@@ -67,3 +67,20 @@ flavors:
         # Development Team is visible in the apple developer portal
   #          DEVELOPMENT_TEAM: YOURDEVTEAMID
   #          PROVISIONING_PROFILE_SPECIFIER: "Prod-ProvisioningProfile"
+  third:
+    app:
+      name: "t-supercycle"
+    android:
+      applicationId: "com.supercycle.third"
+      icon: "assets/ic_launcher.png"
+      firebase:
+        config: "flavor/prod/google-services.json"
+    ios:
+      bundleId: "com.supercycle.third"
+      icon: "assets/ic_launcher.png"
+      firebase:
+        config: "flavor/prod/GoogleService-Info.plist"
+        #        buildSettings:
+        # Development Team is visible in the apple developer portal
+    #          DEVELOPMENT_TEAM: YOURDEVTEAMID
+    #          PROVISIONING_PROFILE_SPECIFIER: "Prod-ProvisioningProfile"
