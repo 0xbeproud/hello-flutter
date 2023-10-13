@@ -1,40 +1,60 @@
-flavors:
-  dev:
-    app:
-      name: "d-supercycle"
+flavorizr:
+  ide: "androidstudio"
+  app:
     android:
-      applicationId: "com.supercycle.dev"
-      icon: "assets/ic_launcher.png"
-      firebase:
-        config: "flavor/dev/google-services.json"
+      flavorDimensions: "flavor-type"
     ios:
-      bundleId: "com.supercycle.dev"
-      icon: "assets/ic_launcher.png"
-      firebase:
-        config: "flavor/dev/GoogleService-Info.plist"
-  qa:
-    app:
-      name: "q-supercycle"
-    android:
-      applicationId: "com.supercycle.qa"
-      icon: "assets/ic_launcher.png"
-      firebase:
-        config: "flavor/qa/google-services.json"
-    ios:
-      bundleId: "com.supercycle.qa"
-      icon: "assets/ic_launcher.png"
-      firebase:
-        config: "flavor/qa/GoogleService-Info.plist"
-  prod:
-    app:
-      name: "supercycle"
-    android:
-      applicationId: "com.supercycle"
-      icon: "assets/ic_launcher.png"
-      firebase:
-        config: "flavor/prod/google-services.json"
-    ios:
-      bundleId: "com.supercycle"
-      icon: "assets/ic_launcher.png"
-      firebase:
-        config: "flavor/prod/GoogleService-Info.plist"
+      flavorDimensions: "flavor-type"
+
+  flavors:
+    dev:
+      app:
+        name: "d-supercycle"
+      android:
+        applicationId: "com.supercycle.dev"
+        icon: "assets/ic_launcher.png"
+        firebase:
+          config: "flavor/dev/google-services.json"
+      ios:
+        bundleId: "com.supercycle.dev"
+        icon: "assets/ic_launcher.png"
+        firebase:
+          config: "flavor/dev/GoogleService-Info.plist"
+#        buildSettings:
+          # Development Team is visible in the apple developer portal
+#          DEVELOPMENT_TEAM: YOURDEVTEAMID
+#          PROVISIONING_PROFILE_SPECIFIER: "Dev-ProvisioningProfile"
+    qa:
+      app:
+        name: "q-supercycle"
+      android:
+        applicationId: "com.supercycle.qa"
+        icon: "assets/ic_launcher.png"
+        firebase:
+          config: "flavor/qa/google-services.json"
+      ios:
+        bundleId: "com.supercycle.qa"
+        icon: "assets/ic_launcher.png"
+        firebase:
+          config: "flavor/qa/GoogleService-Info.plist"
+#        buildSettings:
+          # Development Team is visible in the apple developer portal
+    #          DEVELOPMENT_TEAM: YOURDEVTEAMID
+    #          PROVISIONING_PROFILE_SPECIFIER: "-ProvisioningProfile"
+    prod:
+      app:
+        name: "supercycle"
+      android:
+        applicationId: "com.supercycle"
+        icon: "assets/ic_launcher.png"
+        firebase:
+          config: "flavor/prod/google-services.json"
+      ios:
+        bundleId: "com.supercycle"
+        icon: "assets/ic_launcher.png"
+        firebase:
+          config: "flavor/prod/GoogleService-Info.plist"
+#        buildSettings:
+          # Development Team is visible in the apple developer portal
+    #          DEVELOPMENT_TEAM: YOURDEVTEAMID
+    #          PROVISIONING_PROFILE_SPECIFIER: "Prod-ProvisioningProfile"
