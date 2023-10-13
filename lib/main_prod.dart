@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:kakao_flutter_sdk/kakao_flutter_sdk.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 import 'package:supercycle/app/app.dart';
+import 'package:supercycle/config/properties.dart';
 
 import 'config/flavors.dart';
 
@@ -19,6 +20,7 @@ Future<void> main() async {
     );
 
     F.appFlavor = Flavor.prod;
+    Properties(F.appFlavor);
     if (!kDebugMode) {
       await SentryFlutter.init(
             (options) {

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="naver_client_id">jJ0O3ozHJpE3wZqKWVxj</string>
+    <string name="naver_client_secret">Vuy4WIn6vu</string>
+    <string name="naver_service_app_name">supercycle-dev</string>
+</resources>
