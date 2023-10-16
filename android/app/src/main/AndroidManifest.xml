@@ -20,9 +20,11 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
+
         <!-- Redirect URI, "kakao${YOUR_NATIVE_APP_KEY}://oauth" 형식 -->
-        <data android:scheme="kakao12cb46543a68713b77a401e366a9ae5d" android:host="oauth"/>
+        <data android:host="oauth" android:scheme="@string/kakao_scheme"/>
       </intent-filter>
+
     </activity>
     <!-- naver login -->
     <meta-data android:name="com.naver.sdk.clientId" android:value="@string/naver_client_id"/>

@@ -5,34 +5,16 @@ class Properties {
   final AppProperties app;
   final KakaoProperties kakao;
 
-
   Properties._dev()
       : app = AppProperties("d-Super Cycle", "https://api.supercycle.dev", "https://cdn.supercycle.dev"),
-        kakao = KakaoProperties("nativeAppKey", "javaScriptAppKey", "customScheme");
-
-  Properties._sandbox()
-      : app = AppProperties("s-Super Cycle", "https://api.supercycle.sandbox", "https://cdn.supercycle.sandbox"),
-        kakao = KakaoProperties("nativeAppKey", "javaScriptAppKey", "customScheme");
-
-  Properties._qa()
-      : app = AppProperties("q-Super Cycle", "https://api.supercycle.qa", "https://cdn.supercycle.qa"),
-        kakao = KakaoProperties("nativeAppKey", "javaScriptAppKey", "customScheme");
+        kakao = KakaoProperties("kakao12cb46543a68713b77a401e366a9ae5d", "nativeAppKey", "javaScriptAppKey");
 
   Properties._prod()
       : app = AppProperties("Super Cycle", "https://api.supercycle.com", "https://cdn.supercycle.com"),
-        kakao = KakaoProperties("nativeAppKey", "javaScriptAppKey", "customScheme");
+        kakao = KakaoProperties("kakao88c6755626a347449a25bd9c4b765a16", "nativeAppKey", "javaScriptAppKey");
 
   factory Properties(Flavor? flavor) {
     switch (flavor) {
-      case Flavor.dev:
-        _instance = Properties._dev();
-        break;
-      case Flavor.sandbox:
-        _instance = Properties._sandbox();
-        break;
-      case Flavor.qa:
-        _instance = Properties._qa();
-        break;
       case Flavor.prod:
         _instance = Properties._prod();
         break;
@@ -56,9 +38,9 @@ class AppProperties {
 }
 
 class KakaoProperties {
+  final String customScheme;
   final String nativeAppKey;
   final String javaScriptAppKey;
-  final String customScheme;
 
-  KakaoProperties(this.nativeAppKey, this.javaScriptAppKey, this.customScheme);
+  KakaoProperties(this.customScheme, this.nativeAppKey, this.javaScriptAppKey);
 }

@@ -32,26 +32,31 @@ android {
             dimension "flavor-type"
             applicationId "com.supercycle.dev"
             resValue "string", "app_name", "d-supercycle"
+            resValue "string", "kakao_scheme", "kakao12cb46543a68713b77a401e366a9ae5d"
         }
         sandbox {
             dimension "flavor-type"
             applicationId "com.supercycle.sandbox"
             resValue "string", "app_name", "s-supercycle"
+            resValue "string", "kakao_scheme", "kakao12cb46543a68713b77a401e366a9ae5d"
         }
         qa {
             dimension "flavor-type"
             applicationId "com.supercycle.qa"
             resValue "string", "app_name", "q-supercycle"
+            resValue "string", "kakao_scheme", "kakao12cb46543a68713b77a401e366a9ae5d"
         }
         prod {
             dimension "flavor-type"
             applicationId "com.supercycle"
             resValue "string", "app_name", "supercycle"
+            resValue "string", "kakao_scheme", "kakao88c6755626a347449a25bd9c4b765a16"
         }
         third {
             dimension "flavor-type"
             applicationId "com.supercycle.third"
             resValue "string", "app_name", "t-supercycle"
+            resValue "string", "kakao_scheme", "kakao12cb46543a68713b77a401e366a9ae5d"
         }
     }
 

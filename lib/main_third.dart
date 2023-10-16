@@ -14,13 +14,16 @@ Future<void> main() async {
     // 웹 환경에서 카카오 로그인을 정상적으로 완료하려면 runApp() 호출 전 아래 메서드 호출 필요
     WidgetsFlutterBinding.ensureInitialized();
 
-    KakaoSdk.init(
-      nativeAppKey: '<key>',
-      javaScriptAppKey: '<key>',
-    );
-
     F.appFlavor = Flavor.third;
     Properties(F.appFlavor);
+
+    final kakao = Properties.instance.kakao;
+    KakaoSdk.init(
+      nativeAppKey: kakao.nativeAppKey,
+      javaScriptAppKey: kakao.javaScriptAppKey,
+      customScheme: kakao.customScheme,
+    );
+
     if (!kDebugMode) {
       await SentryFlutter.init(
             (options) {
