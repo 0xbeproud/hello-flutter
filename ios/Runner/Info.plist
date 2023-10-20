@@ -84,6 +84,12 @@
 				<string>${NAVER_SERVICE_APP_NAME}</string>
 			</array>
 		</dict>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+              <string>fb234374486036267</string>
+            </array>
+        </dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
@@ -145,5 +151,12 @@
 	<string>${NAVER_SERVICE_APP_NAME}</string>
 	<key>naverServiceAppUrlScheme</key>
 	<string>${NAVER_URL_SCHEME}</string>
+
+    <key>FacebookAppID</key>
+    <string>234374486036267</string>
+    <key>FacebookDisplayName</key>
+    <string>SuperCycle</string>
+    <key>FacebookClientToken</key>
+    <string>479b3583fe815cbe3696627b0211db16</string>
 </dict>
 </plist>

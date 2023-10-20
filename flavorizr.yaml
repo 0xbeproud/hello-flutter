@@ -4,12 +4,12 @@ flavors:
       name: "d-supercycle"
     android:
       applicationId: "com.supercycle.dev"
-      icon: "assets/ic_launcher.png"
+      icon: "assets/app/playstore.png"
       firebase:
         config: "flavor/dev/google-services.json"
     ios:
       bundleId: "com.supercycle.dev"
-      icon: "assets/ic_launcher.png"
+      icon: "assets/app/appstore.png"
       firebase:
         config: "flavor/dev/GoogleService-Info.plist"
 #        buildSettings:
@@ -21,12 +21,12 @@ flavors:
       name: "s-supercycle"
     android:
       applicationId: "com.supercycle.sandbox"
-      icon: "assets/ic_launcher.png"
+      icon: "assets/app/playstore.png"
       firebase:
         config: "flavor/sandbox/google-services.json"
     ios:
       bundleId: "com.supercycle.sandbox"
-      icon: "assets/ic_launcher.png"
+      icon: "assets/app/appstore.png"
       firebase:
         config: "flavor/sandbox/GoogleService-Info.plist"
         #        buildSettings:
@@ -38,12 +38,12 @@ flavors:
       name: "q-supercycle"
     android:
       applicationId: "com.supercycle.qa"
-      icon: "assets/ic_launcher.png"
+      icon: "assets/app/playstore.png"
       firebase:
         config: "flavor/qa/google-services.json"
     ios:
       bundleId: "com.supercycle.qa"
-      icon: "assets/ic_launcher.png"
+      icon: "assets/app/appstore.png"
       firebase:
         config: "flavor/qa/GoogleService-Info.plist"
 #        buildSettings:
@@ -55,12 +55,12 @@ flavors:
       name: "supercycle"
     android:
       applicationId: "com.supercycle"
-      icon: "assets/ic_launcher.png"
+      icon: "assets/app/playstore.png"
       firebase:
         config: "flavor/prod/google-services.json"
     ios:
       bundleId: "com.supercycle"
-      icon: "assets/ic_launcher.png"
+      icon: "assets/app/appstore.png"
       firebase:
         config: "flavor/prod/GoogleService-Info.plist"
 #        buildSettings:
@@ -72,12 +72,12 @@ flavors:
       name: "t-supercycle"
     android:
       applicationId: "com.supercycle.third"
-      icon: "assets/ic_launcher.png"
+      icon: "assets/app/playstore.png"
       firebase:
         config: "flavor/prod/google-services.json"
     ios:
       bundleId: "com.supercycle.third"
-      icon: "assets/ic_launcher.png"
+      icon: "assets/app/appstore.png"
       firebase:
         config: "flavor/prod/GoogleService-Info.plist"
         #        buildSettings:

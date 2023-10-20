@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:facebook_app_events/facebook_app_events.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:kakao_flutter_sdk/kakao_flutter_sdk.dart';
@@ -24,6 +25,10 @@ Future<void> main() async {
       javaScriptAppKey: kakao.javaScriptAppKey,
       customScheme: kakao.customScheme,
     );
+
+    FacebookAppEvents facebookAppEvents = FacebookAppEvents();
+    await facebookAppEvents.setAdvertiserTracking(enabled: true);
+    await facebookAppEvents.setAutoLogAppEventsEnabled(true);
 
     if (!kDebugMode) {
       await SentryFlutter.init(
