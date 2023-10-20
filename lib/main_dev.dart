@@ -39,9 +39,11 @@ Future<void> main() async {
       city: 'Seoul',
       country: 'South Korea',
     );
-    facebookAppEvents.logAddToCart(id: "1", type: "goods", currency: "원", price: 59000);
+    facebookAppEvents.logAddToCart(id: "1", type: "goods", currency: "dollar", price: 59000);
     facebookAppEvents.logViewContent(id: "123", type: "goods");
     facebookAppEvents.logViewContent(id: "456", type: "banner");
+    facebookAppEvents.logAdClick(adType: "adType");
+    facebookAppEvents.logEvent(name: "REPLACE", parameters: {"from": "old", "to": "new"});
 
     if (!kDebugMode) {
       await SentryFlutter.init(
