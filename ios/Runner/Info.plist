@@ -85,9 +85,13 @@
 			</array>
 		</dict>
         <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>facebook</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>fb234374486036267</string>
+              <string>${FACEBOOK_URL_SCHEME}</string>
             </array>
         </dict>
 	</array>
@@ -153,10 +157,10 @@
 	<string>${NAVER_URL_SCHEME}</string>
 
     <key>FacebookAppID</key>
-    <string>234374486036267</string>
+    <string>${FACEBOOK_APP_ID}</string>
     <key>FacebookDisplayName</key>
-    <string>SuperCycle</string>
+    <string>${FACEBOOK_DISPLAY_NAME}</string>
     <key>FacebookClientToken</key>
-    <string>479b3583fe815cbe3696627b0211db16</string>
+    <string>${FACEBOOK_CLIENT_TOKEN}</string>
 </dict>
 </plist>

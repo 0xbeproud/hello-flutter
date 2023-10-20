@@ -15,7 +15,6 @@ Future<void> main() async {
     // 웹 환경에서 카카오 로그인을 정상적으로 완료하려면 runApp() 호출 전 아래 메서드 호출 필요
     WidgetsFlutterBinding.ensureInitialized();
 
-
     F.appFlavor = Flavor.dev;
     Properties(F.appFlavor);
 
@@ -30,9 +29,23 @@ Future<void> main() async {
     await facebookAppEvents.setAdvertiserTracking(enabled: true);
     await facebookAppEvents.setAutoLogAppEventsEnabled(true);
 
+    facebookAppEvents.logEvent(name: "runApp", parameters: {"app": "supercycle"});
+    facebookAppEvents.setUserID("logan");
+    facebookAppEvents.logEvent(name: "button_clicked", parameters: {"button_id": "login_button"});
+    facebookAppEvents.setUserData(
+      email: 'betheproud@gmail.com',
+      firstName: 'betheproud',
+      dateOfBirth: '2019-10-19',
+      city: 'Seoul',
+      country: 'South Korea',
+    );
+    facebookAppEvents.logAddToCart(id: "1", type: "goods", currency: "원", price: 59000);
+    facebookAppEvents.logViewContent(id: "123", type: "goods");
+    facebookAppEvents.logViewContent(id: "456", type: "banner");
+
     if (!kDebugMode) {
       await SentryFlutter.init(
-            (options) {
+        (options) {
           options.dsn = "sentryDsn";
           options.attachStacktrace = true;
           options.environment = F.appFlavor?.name;

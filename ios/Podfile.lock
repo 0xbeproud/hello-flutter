@@ -34,7 +34,6 @@ PODS:
 
 DEPENDENCIES:
   - facebook_app_events (from `.symlinks/plugins/facebook_app_events/ios`)
-  - FBSDKCoreKit
   - Flutter (from `Flutter`)
   - flutter_naver_login (from `.symlinks/plugins/flutter_naver_login/ios`)
   - kakao_flutter_sdk_common (from `.symlinks/plugins/kakao_flutter_sdk_common/ios`)
@@ -88,6 +87,6 @@ SPEC CHECKSUMS:
   shared_preferences_foundation: 5b919d13b803cadd15ed2dc053125c68730e5126
   webview_flutter_wkwebview: 2e2d318f21a5e036e2c3f26171342e95908bd60a
 
-PODFILE CHECKSUM: a49c346a13f7d229f8a710c47754bbeaff165a7b
+PODFILE CHECKSUM: 80c5acfe8b79e14bde22297341c6b7608a0b489d
 
 COCOAPODS: 1.13.0

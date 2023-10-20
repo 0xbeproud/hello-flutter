@@ -3,4 +3,8 @@
     <string name="naver_client_id">jJ0O3ozHJpE3wZqKWVxj</string>
     <string name="naver_client_secret">Vuy4WIn6vu</string>
     <string name="naver_service_app_name">supercycle-dev</string>
+
+    <string name="facebook_app_id">1061378648371336</string>
+    <string name="fb_login_protocol_scheme">fb1061378648371336</string>
+    <string name="facebook_client_token">3b80ec116d2f1801bd92b13a2898d98c</string>
 </resources>

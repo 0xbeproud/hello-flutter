@@ -43,4 +43,8 @@ post_install do |installer|
   end
 end
 
-pod 'FBSDKCoreKit'
+# pod 'FacebookSDK'
+# pod 'FacebookSDK/LoginKit'
+# pod 'FacebookSDK/ShareKit'
+# pod 'FacebookSDK/PlacesKit'
+# pod 'FBSDKMessengerShareKit'

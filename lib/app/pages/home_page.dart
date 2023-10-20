@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
         '/login': (context) => const LoginScreen(),
         '/splash': (context) => const SplashScreen(),
       },
-      initialRoute: '/login',
+      initialRoute: '/index',
     );
   }
 }
